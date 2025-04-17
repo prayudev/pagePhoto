@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Prayu- Drag Papers ❤️</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="paper.css">
+</head>
+<h1 style="color: aliceblue;"><b>Also Touch heart</b></h1>
+<body oncontextmenu="return false;">
+<!-- partial:index.partial.html -->
+<!-- A pen by Developer Ayush  -->
+<div class="paper heart">
+<h1 style="color: rgb(29, 60, 11);">touch me</h1>
+</div>
+<a href="gift.html"><button id="nextBtn" style="
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 45px;
+  font-size: 40px;
+  background: #cc00cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(0, 102, 32);
+  display: none;
+  cursor: pointer;
+  z-index: 9999;
+  margin-bottom: 300px;
+">
+  Next
+</button></a>
+  
+<div class="paper image">
+ 
+    <p> 😍 </p>
+   <img src="images/b2.png" />
+</div>
+
+<div class="paper image">
+  <p</p>
+  <img src="images/b1.png" />
+</div>
+
+<div class="paper image">
+  <video autoplay muted loop playsinline>
+    <source src="images/v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="paper image">
+  <p>How can be <br>someone so cute ❤️ </p>
+  <img src="images/b3.png" />
+</div>
+<div class="paper image">
+  <p>Keep Smiling❤️ </p>
+  <img src="images/b4.png" />
+</div>
+<div class="paper image">
+  <p>Big Hugs❤️ </p>
+  <img src="images/b5.png" />
+</div>
+<div class="paper image">
+  <p>❤️ </p>
+  <img src="images/b6.png" />
+</div>
+
+
+
+
+<div class="paper red">
+<p class="p1">Stay blessed and </p>
+<p class="p2">keep shining.❤️</p>
+</div>
+
+<div class="paper">
+<p class="p1">Wishing you  </p>
+  <p class="p1">endless joy! <span style="color: red !important;">❤️</span></p>
+</div>
+
+<div class="paper">
+<p class="p1">DRAG THE PAPER <BR></BR>TO MOVE!</p>
+</div>
+<!-- partial -->
+  <script  src="paper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+<audio id="bg-music" autoplay loop>
+  <source src="images/audio6.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('bg-music');
+
+    const tryPlay = () => {
+      music.play().catch(() => {
+        // If autoplay fails, wait for a user interaction
+        const resumeOnClick = () => {
+          music.play();
+          document.removeEventListener('click', resumeOnClick);
+        };
+        document.addEventListener('click', resumeOnClick);
+      });
+    };
+
+    tryPlay();
+  });
+</script>
+
+  </script>
+ 
+</body>
+</html>
